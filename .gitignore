@@ -5,3 +5,8 @@ chroma_db_old/
 # Local RAG monitoring database
 rag_monitoring.db
 rag_monitoring.db-journal
+# Firebase private credentials
+serviceAccountKey.json
+firebase-service-account.json
+# Streamlit local secrets
+.streamlit/secrets.toml
