@@ -344,7 +344,7 @@ with st.expander("View RAG monitoring architecture"):
         2. ChromaDB retrieves the six most relevant PDF chunks.
         3. Gemini generates an answer using the retrieved context.
         4. Python measures retrieval, generation and total latency.
-        5. SQLite stores anonymous monitoring records.
+        5. Firestore stores live anonymous monitoring records.
         6. This dashboard converts the records into metrics and charts.
         """
     )
@@ -353,5 +353,5 @@ with st.expander("View RAG monitoring architecture"):
 st.caption(
     "AVYUHA RAG Monitoring System • "
     "Built with Python, Streamlit, ChromaDB, Gemini, "
-    "SQLite, Pandas and Plotly"
+    "Firestore, Pandas and Plotly"
 )
