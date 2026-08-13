@@ -3,9 +3,9 @@ import json
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from streamlit_autorefresh import st_autorefresh
 
 from monitoring import get_monitoring_logs
-
 
 st.set_page_config(
     page_title="AVYUHA RAG Monitoring",
@@ -59,8 +59,13 @@ st.markdown(
 )
 
 
-if st.button("🔄 Refresh dashboard"):
-    st.rerun()
+
+    # Automatically reload Firestore data every 2 seconds
+st_autorefresh(
+    interval=2000,
+    limit=None,
+    key="dashboard_auto_refresh"
+)
 
 
 logs = get_monitoring_logs()

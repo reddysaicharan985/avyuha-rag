@@ -9,3 +9,4 @@ chromadb==1.5.9
 pandas
 plotly
 firebase-admin
+streamlit-autorefresh==1.0.1

@@ -40,7 +40,7 @@ def load_rag_components():
     )
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-3.6-flash"
+        model="gemini-3.5-flash-lite"
     )
 
     return vector_store, llm
